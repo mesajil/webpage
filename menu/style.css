@@ -5,6 +5,14 @@
     border: 0;
     padding: 0;
 }
+
+.main {
+    width: 90%;
+    margin: auto;
+}
+
+/* Menu */
+
 .menu-nav {
     background-color: rgb(43, 202, 202);
     padding-top: 10px;
@@ -32,9 +40,26 @@
     content: " | ";
 }
 
+/* Arcticle */
 
+section article {
+    background-color: aquamarine;
+}
+
+section article div {
+    padding: 40px 0px;
+    margin: auto;
+    overflow: hidden;
+    width: 90%;
+}
+section article img {
+    float: left;
+    width: 50%;
+}
 section article p {
-    padding: 40px;
+    padding: 0 20px;
+    width: 50%;
+    float: left;
     text-align: justify;
     text-transform: lowercase;
     font-weight: bold;
@@ -86,3 +111,38 @@ section .second {
     padding: 20px 40px;
 }
 
+/* Boxes */
+
+.box {
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
+
+.box1 {
+    position: relative;
+    left: 300px;
+    top: 100px;
+}
+
+
+/* Fixed button */
+
+.fixed-button-div {
+    width: 50px;
+    height: 50px;
+    /* float: right; */
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
+
+.fixed-btn {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
