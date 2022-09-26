@@ -132,7 +132,7 @@ section .second {
 /* Fixed button */
 
 .fixed-button-div {
-    width: 50px;
+    width: 5%;
     height: 50px;
     position: fixed;
     bottom: 0%;
@@ -143,7 +143,7 @@ section .second {
     background-color: black;
     color: white;
     border-radius: 30px;
-    padding: 10px;
+    padding: 5%;
 }
 
 /* Article 2 */
@@ -157,10 +157,80 @@ section .second {
 .article img {
     float: left;
     margin: 0 2% 0 0;
+    width: 50%;
 }
 
 .article p {
     text-align: justify;
     font-weight: bold;
+    font-size: larger;
+}
 
+/* Table */
+
+.boxtable h2 {
+    text-align: center;
+    margin: 20px auto 0 auto;
+    text-decoration: underline;
+}
+
+.boxtable {
+    overflow: hidden;
+    margin: 10px auto;
+    
+    /* Detail */
+    background-color: aquamarine;
+}
+
+.boxtable table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.boxtable th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.boxtable thead {
+    background-color: black;
+    color: white;
+}
+
+.boxtable tbody {
+    background-color: white;
+}
+
+.boxtable tfoot {
+    background-color: bisque;
+    font-weight: bold;
+}
+
+.boxtable tr:hover {
+    background-color: gainsboro;
+    font-weight: bold;
+}
+
+/* List style */
+
+.box-ol {
+    overflow: hidden;
+    background-color: aquamarine;
+}
+.box-ol ul {
+    background-color: bisque;
+    list-style-position: inside;
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.box-ol ol {
+    list-style-position: inside;
+    list-style-type: upper-latin;
+    text-align: center;
+    background-color: rgb(167, 115, 216);
+    margin: 0 auto 10px auto;
+    width: 80%;
 }
