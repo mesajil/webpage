@@ -1,0 +1,55 @@
+body {
+    font-size: larger;
+    font-weight: bold;
+}
+
+header {
+    overflow: hidden;
+    background-color: blueviolet;
+}
+header h1 {
+    text-align: center;
+    color: white;
+    padding: 20px auto;
+}
+
+.result {
+    overflow: hidden;
+    width: 20%;
+    margin: 15px auto;
+    background-color: chartreuse;
+    text-align: center;
+    border: 3px solid red;
+}
+
+.result p {
+    padding: 10px auto;
+    color: red;
+}
+
+.article {
+    background-color: antiquewhite;
+    text-align: center;
+    width: 30%;
+    margin: 0 1%;
+    border: 3px solid blueviolet;
+    border-radius: 15px;
+    float:left;
+}
+
+.article h2 {
+    background-color: aquamarine;
+    color: blue;
+}
+
+.article form {
+    padding-top: 10px;
+}
+
+.article input {
+    
+}
+
+.article button {
+
+}
