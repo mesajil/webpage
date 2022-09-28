@@ -1,236 +1,55 @@
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
-
-.main {
-    width: 90%;
-    margin: auto;
-}
-
-/* Menu */
-
-.menu-nav {
-    background-color: rgb(43, 202, 202);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.menu-ul {
-    list-style: none;
-}
-.menu-ul__li {
-    display: inline-block;
-}
-.menu-ul__li a {
-    color: white;
-    text-decoration: none;
-    font-size: large;
-}
-.menu-ul__li a:hover {
-    color: red;
-}
-.menu-ul__li a:active {
-    color: blue;
-}
-.menu-ul__li a::after {
-    content: " | ";
-}
-
-/* Arcticle 1 */
-
-section article {
-    background-color: aquamarine;
-    overflow: hidden;
-}
-
-section article div {
-    padding: 40px 0px;
-    margin: auto;
-    overflow: hidden;
-    width: 90%;
-}
-section article img {
-    float: left;
-    width: 50%;
-}
-section article p {
-    padding: 0 20px;
-    width: 50%;
-    float: left;
-    text-align: justify;
-    text-transform: lowercase;
+body {
+    font-size: larger;
     font-weight: bold;
-    text-indent: 40px;
-    line-height: 40px;
-    word-spacing: 20px;
-    letter-spacing: 2px;
-    text-shadow: 4px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* a */
-
-section .a {
-    display: block;
-    text-decoration: none;
-    background-color: rgb(101, 183, 183);
-    font-size: 20px;
+header {
+    overflow: hidden;
+    background-color: blueviolet;
+}
+header h1 {
     text-align: center;
-    text-transform:capitalize;
-    padding: 20px;
-}
-section .a:hover {
     color: white;
+    padding: 20px auto;
 }
 
-/* Button */
-
-section .div-btn {
-    margin: 20px;
+.result {
+    overflow: hidden;
+    width: 20%;
+    margin: 15px auto;
+    background-color: chartreuse;
     text-align: center;
+    border: 3px solid red;
 }
-section .div-btn div {
-    margin: 20px;
-}
-section .btn {
-    background: greenyellow;
+
+.result p {
+    padding: 10px auto;
     color: red;
-    font-size: large;
-    padding: 10px 30px;
-    border-radius: 30px;    
 }
-
-section .btn:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-section .second {
-    padding: 20px 40px;
-}
-
-/* Boxes */
-
-.box {
-    background-color: blue;
-    width: 25%;
-    height: 100px;
-    text-align: center;
-    color: white;
-}
-
-.box1 {
-    position: relative;
-    left: 50%;
-    top: 150px;
-}
-
-
-/* Fixed button */
-
-.fixed-button-div {
-    width: 5%;
-    height: 50px;
-    position: fixed;
-    bottom: 0%;
-    right: 0%;
-}
-
-.fixed-btn {
-    background-color: black;
-    color: white;
-    border-radius: 30px;
-    padding: 5%;
-}
-
-/* Article 2 */
 
 .article {
-    background-color: aquamarine;
-    overflow: hidden;
-    padding: 3%;
-}
-
-.article img {
-    float: left;
-    margin: 0 2% 0 0;
-    width: 50%;
-}
-
-.article p {
-    text-align: justify;
-    font-weight: bold;
-    font-size: larger;
-}
-
-/* Table */
-
-.boxtable h2 {
+    background-color: antiquewhite;
     text-align: center;
-    margin: 20px auto 0 auto;
-    text-decoration: underline;
+    width: 30%;
+    margin: 0 1%;
+    border: 3px solid blueviolet;
+    border-radius: 15px;
+    float:left;
 }
 
-.boxtable {
-    overflow: hidden;
-    margin: 10px auto;
+.article h2 {
+    background-color: aquamarine;
+    color: blue;
+}
+
+.article form {
+    padding-top: 10px;
+}
+
+.article input {
     
-    /* Detail */
-    background-color: aquamarine;
 }
 
-.boxtable table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 80%;
-}
+.article button {
 
-.boxtable th, td {
-    border: 1px solid black;
-    text-align: center;
-}
-
-.boxtable thead {
-    background-color: black;
-    color: white;
-}
-
-.boxtable tbody {
-    background-color: white;
-}
-
-.boxtable tfoot {
-    background-color: bisque;
-    font-weight: bold;
-}
-
-.boxtable tr:hover {
-    background-color: gainsboro;
-    font-weight: bold;
-}
-
-/* List style */
-
-.box-ol {
-    overflow: hidden;
-    background-color: aquamarine;
-}
-.box-ol ul {
-    background-color: bisque;
-    list-style-position: inside;
-    text-align: center;
-    margin: 10px auto;
-    width: 80%;
-}
-
-.box-ol ol {
-    list-style-position: inside;
-    list-style-type: upper-latin;
-    text-align: center;
-    background-color: rgb(167, 115, 216);
-    margin: 0 auto 10px auto;
-    width: 80%;
 }
