@@ -28,28 +28,61 @@ header h1 {
 }
 
 .article {
+    overflow: hidden;
+    margin: 0 1%;
+    width: 30%;
+    float:left;
     background-color: antiquewhite;
     text-align: center;
-    width: 30%;
-    margin: 0 1%;
     border: 3px solid blueviolet;
     border-radius: 15px;
-    float:left;
 }
 
 .article h2 {
+    display: block;
     background-color: aquamarine;
     color: blue;
 }
 
 .article form {
-    padding-top: 10px;
+    margin: auto;
+    width: 95%;
+}
+
+.article label {
+    display: inline-block;
+    font-style: oblique;
+    width: 20%;
 }
 
 .article input {
-    
+    margin: 10px auto;
+    padding: 20px auto;
+    width: 50%;
+    height: 20px;
+    border: 2px solid chartreuse;
+    border-radius: 15px;
+    color: red;
+    font-weight: bold;
 }
 
 .article button {
+    margin: 15px auto 20px 1%;
+    height: 30px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+}
 
+.article button:hover {
+    background-color: rgb(84, 22, 142);
+    cursor: pointer;
+}
+
+.article button:active {
+    opacity: 0.5;
 }
