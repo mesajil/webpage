@@ -29,7 +29,7 @@ header h1 {
 
 .article {
     overflow: hidden;
-    margin: 0 1%;
+    margin: 10px 0 0 1%;
     width: 30%;
     float:left;
     background-color: antiquewhite;
@@ -85,4 +85,16 @@ header h1 {
 
 .article button:active {
     opacity: 0.5;
+}
+
+@media screen and (max-width:1000px) {
+    .article {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .article {
+        width: 90%;
+    }
 }
