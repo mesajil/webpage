@@ -1,0 +1,36 @@
+
+* {
+
+}
+
+.socialmedia {
+    overflow: hidden;
+    background-color: rgb(85, 25, 154);
+}
+
+.socialmedia menu {
+    float: right;
+}
+
+.title {
+    overflow: hidden;
+    margin: 10px 2%;
+}
+
+.logo {
+    float: left;
+
+}
+
+.profile {
+    text-decoration: none;
+    float: right;
+    text-transform:capitalize;
+}
+
+
+
+.main {
+    background-image: url("svg/stars.svg");
+    text-align: center;
+}
