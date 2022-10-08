@@ -1,37 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 * {
     font-family: 'Silkscreen', cursive;
     font-size: large;
 }
 
+.main-body {
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 .socialmedia {
-    overflow: hidden;
+    width: 100%;
     background-color: rgb(85, 25, 154);
+    display: grid;
 }
 
 .socialmedia menu {
-    float: right;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 3%;
+}
+
+.socialmedia menu a {
+    color: white;
+}
+
+.socialmedia menu a:hover{
+    color: darkgray;
 }
 
 .title {
-    overflow: hidden;
-    margin: 10px 2%;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .logo {
-    float: left;
-
+    width: 15%;
+    display: flex;
+    text-align: center;
+    justify-self: start;
+    margin-left: 3%;
 }
 
 .profile {
+    width: 25%;
+    display: flex;
+    justify-self: end;
+    text-align: center;
     text-decoration: none;
-    float: right;
     text-transform:capitalize;
 }
 
 
-
 .main {
-    background-image: url("svg/stars.svg");
-    text-align: center;
+    background-image: url("./../svg/stars.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.text {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    color: white;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.text p {
+    display: grid;
+    grid-row: 2;
+}
+
+.button {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+.button button {
+    height: 40px;
+    display: grid;
+    grid-row: 1;
+    color: white;
+    background-color: brown;
+}
+
+.button button:hover {
+    background-color: rgba(165, 42, 42, 0.417);
+    cursor: pointer;
 }
