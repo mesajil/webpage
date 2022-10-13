@@ -19,7 +19,7 @@ header {
 }
 
 .socialmedia menu {
-    width: 15%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,4 +102,75 @@ header {
 .button button:hover {
     background-color: rgba(165, 42, 42, 0.417);
     cursor: pointer;
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-intro {
+    text-align: center;
+}
+
+.main-img {
+    display: grid;
+    grid-column: 1;
+    justify-items: center;
+    align-content: center;
+}
+
+.main-img img {
+    width: 80%;
+}
+
+.main-text {
+    display: grid;
+    grid-column: 2;
+    text-align: center;
+    padding: 25px 5% 25px 0;
+}
+
+.main-text p {
+    font-weight: bold;
+    text-align: justify;
+}
+
+.last-title {
+    text-align: center;
+}
+
+.last {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 25px;
+}
+.last-img {
+    text-align: center;
+}
+
+.last-img img {
+    width: 80%;
+}
+
+.last-text {
+    text-align: center;
+} 
+
+.last-text p {
+    padding: 0 5%;
+    text-align: justify;
+}
+
+footer {
+    background-color: rgb(85, 25, 154);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.foo-second {
+    background-color: black;
+    color: white;
+    text-align: center;
 }
