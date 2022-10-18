@@ -5,9 +5,6 @@
     font-size: large;
 }
 
-.main-body {
-}
-
 header {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -86,6 +83,7 @@ header {
     display: grid;
     grid-row: 2;
     text-shadow: 2px 2px 5px black;
+    text-align: center;
 }
 
 .button {
@@ -294,3 +292,30 @@ footer {
     text-align: justify;
 }
 
+@media screen and (max-width:1100px) {
+
+    .socialmedia menu {
+        width: 50%;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width:660px) {
+    
+    .socialmedia menu {
+        width: 80%;
+        justify-self: center;
+    }
+
+    .main-profile {
+        display: block;
+    }
+
+    .main-projects-all {
+        display: block;;
+    }
+    
+    .main-projects-single {
+        max-width: 100%;
+    }
+}
