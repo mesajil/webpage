@@ -43,7 +43,7 @@ header {
     display: flex;
     text-align: center;
     justify-self: start;
-    margin-left: 3%;
+    margin-left: 0%;
 }
 
 .profile {
@@ -221,7 +221,7 @@ footer {
 
 .contact {
     display: grid;
-    padding: 30px 0 10px 10%;
+    padding: 30px 10% 10px 10%;
     grid-template-columns: 1fr 2fr;
     justify-items: center;
 }
@@ -237,7 +237,7 @@ footer {
 
 .write {
     display: grid;
-    padding: 30px 10% 10px 0;
+    padding: 30px 10% 10px 10%;
     grid-template-columns: 1fr 2fr;
     justify-items: center;
 }
@@ -254,8 +254,12 @@ footer {
     background-color: grey;
 }
 
+.main-profile img {
+    width: 100%
+}
+
 .main-profile-text {
-    padding-left: 5%;
+    padding: 0 5% 0;
     text-align: center;
 }
 
@@ -293,6 +297,13 @@ footer {
 }
 
 @media screen and (max-width:1100px) {
+    .logo {
+        width: 40%;
+    }
+
+    .profile {
+        width: 30%;
+    }
 
     .socialmedia menu {
         width: 50%;
@@ -301,7 +312,14 @@ footer {
 }
 
 @media screen and (max-width:660px) {
-    
+    .logo {
+        width: 50%;
+    }
+
+    .profile {
+        width: 50%;
+    }
+
     .socialmedia menu {
         width: 80%;
         justify-self: center;
@@ -318,4 +336,15 @@ footer {
     .main-projects-single {
         max-width: 100%;
     }
+
+    .contact {
+        display: block;
+        text-align: center;
+    }
+
+    .write {
+        display: block;
+        text-align: center;
+    }
+
 }
