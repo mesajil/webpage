@@ -23,3 +23,14 @@ document.write("Valor de venta: ", vv,"<br>")
 document.write("IGV: ", igv,"<br>")
 document.write(`Precio de venta: ${vv + igv}`,"<br>")
 
+let number = -5;
+
+document.write((number < 0)? "NEGATIVE": "POSITIVE", "<br>")
+
+    if (number % 2 == 0) {
+    document.write ("ES PAR", "<br>")
+}
+else {
+    document.write ("ES IMPAR", "<br>")
+}
+
