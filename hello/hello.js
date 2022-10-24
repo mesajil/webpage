@@ -10,27 +10,50 @@ document.write("Age: ", age, "<br>")
 document.write(5 + 5 + '5', "<br>")
 document.write(!9 == 0, "<br>")
 
-let n1 = Number(prompt("NUMERO 1"))
-let n2 = Number(prompt("NUMERO 2"))
+// Problem 1 
 
-document.write("COCIENTE: ", Math.floor(n1 / n2),"<br>")
-document.write("RESIDUO: ", n1 % n2,"<br>")
+let consumo = 300, descuento, igv, total, total_pagar
 
-let vv = Number(prompt("VALOR DE VENTA"))
-let igv = vv * 19 / 100
+descuento = (consumo <= 100)? consumo * 0.1 : (consumo <= 200)? consumo * 0.2 : consumo * 0.3
 
-document.write("Valor de venta: ", vv,"<br>")
-document.write("IGV: ", igv,"<br>")
-document.write(`Precio de venta: ${vv + igv}`,"<br>")
+total = consumo - descuento 
+igv = total * 0.19
+total_pagar = total + igv
 
-let number = -5;
+document.write(`CONSUMO: ${consumo}`,"<br>")
+document.write(`DESCUENTO: ${descuento}`,"<br>")
+document.write(`MONTO CON DSCTO: ${total}`, "<br>")
+document.write(`IGV: ${igv.toFixed(2)}`, "<br>")
+document.write(`PRECIO DE VENTA: ${total_pagar.toFixed(2)}`,"<br>")
 
-document.write((number < 0)? "NEGATIVE": "POSITIVE", "<br>")
-
-    if (number % 2 == 0) {
-    document.write ("ES PAR", "<br>")
+// Problem 2
+let A_pares = [], A_inpares = [], random, number
+for (let i = 1; i <= 9; i ++) {
+    random = Math.floor(Math.random() * 101)
+    number = i * random
+    // document.write (`${i} X ${random} = ${number}<br>`)
+    if (number % 2 == 0) A_pares.push(number)
+    else A_inpares.push(number)
 }
-else {
-    document.write ("ES IMPAR", "<br>")
+document.write ("IMPARES: ", A_inpares, "<br>")
+document.write ("PARES: ", A_pares, "<br>")
+
+// Función que suma N números
+
+let sum = (...numbers) => {
+    total = 0
+    for (e of numbers)
+        total += e
+    return total
+}
+document.write (`SUM: ${sum(20, 20)}<br>`)
+
+// Is Prime
+
+let prime = (n) => {
+    for (let i = 2; i < n; i ++)
+        if (n % i == 0) return false
+    return true
 }
 
+document.write (`PRIME: ${prime(18)}<br>`)
