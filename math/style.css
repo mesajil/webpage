@@ -14,7 +14,7 @@ header h1 {
 }
 
 .result {
-    overflow: hidden;
+    display: flex;
     width: 20%;
     margin: 15px auto;
     background-color: chartreuse;
@@ -25,6 +25,14 @@ header h1 {
 .result p {
     padding: 10px auto;
     color: red;
+}
+
+.result-text {
+    margin-left: 30%;
+}
+
+.output {
+    margin-left: 5%;
 }
 
 .article {
@@ -91,10 +99,26 @@ header h1 {
     .article {
         width: 40%;
     }
+
+    .result-text {
+        margin-left: 20%;
+    }
+    
+    .output {
+        margin-left: 3%;
+    }
 }
 
 @media screen and (max-width:600px) {
     .article {
         width: 90%;
+    }
+    
+    .result-text {
+        margin-left: 10%;
+    }
+    
+    .output {
+        margin-left: 2%;
     }
 }
