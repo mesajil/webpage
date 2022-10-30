@@ -15,7 +15,7 @@
     <section>
         <article class="result">
             <p class="result-text">Result:</p>
-            <p class="output">0</p>
+            <p class="output" id="main-output">0</p>
         </article>
         <article class="article">
             <h2>Square</h2>
@@ -25,9 +25,11 @@
                     <input type="number" id="side" name="side">
                 </div>
                 
-                <button type="submit">Perimeter</button>
-                <button type="submit">Area</button>
             </form>
+            <button type="button" onclick="calculatePerimSquare()">
+                Perimeter
+            </button>
+            <button type="button">Area</button>
         </article>
         <article class="article">
             <h2>Triangle</h2>
@@ -58,5 +60,6 @@
         </article>
     </section>
     <footer></footer>
+    <script src="./js/math.js"></script>
 </body>
 </html>
