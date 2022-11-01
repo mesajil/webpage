@@ -17,4 +17,4 @@ jobs:
           uses: JamesIves/github-pages-deploy-action@v4
           with:
             branch: gh-pages
-            folder: blog # The folder the action should deploy.
+            folder: math # The folder the action should deploy.
