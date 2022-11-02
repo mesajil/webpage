@@ -4,45 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b5e567753f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/normalize,css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body class="main-body">
+<body>
     <header>
-        <nav class="socialmedia">
-            <menu>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-            </menu>
-        </nav>
-        <nav class="title">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="" alt="blog">
-                </a>
-            </div>
-            <div class="profile">
-                <a href="profile.html">About me</a>
-            </div>
-        </nav>
+        <h1>Geometric Shapes</h1>
     </header>
     <section>
-        <article class="main">
-            <div class="text">
-                <p>Learn about tecnology</p>
-            </div>
-            <div class="button">
-                <form action="blogs.html">
-                    <button >Start here</button>
-                </form>
-            </div>
+        <article class="result">
+            <p class="result-text">Result:</p>
+            <p class="output" id="main-output">0</p>
+        </article>
+        <article class="article">
+            <h2>Square</h2>
+            <form class="form" action="" method="post" id="form">
+                <div>
+                    <label for="side">Side: </label>
+                    <input type="number" id="side" name="side">
+                </div>
+                
+            </form>
+            <button type="button" id="btnPerimSquare">
+                Perimeter
+            </button>
+            <button type="button" id="btnAreaSquare">
+                Area
+            </button>
+        </article>
+        <article class="article">
+            <h2>Triangle</h2>
+            <form class="form" action="" method="post" id="form">
+                <div>
+                    <label for="height">Height: </label>
+                    <input type="number" id="height" name="height">
+                </div>
+                <div>
+                    <label for="base">Base: </label>
+                    <input type="number" id="base" name="base">
+                </div>
+                
+                <button type="button" id="btnAreaTriangle">
+                    Area
+                </button>
+            </form>
+        </article>
+        <article class="article">
+            <h2>Circle</h2>
+            <form class="form" action="" method="post" id="form">
+                <div>
+                    <label for="radius">Radius: </label>
+                    <input type="number" id="radius" name="radius">
+                </div>
+                
+                <button type="button" id="btnPerimCircle">
+                    Perimeter
+                </button>
+                <button type="button" id="btnAreaCircle">
+                    Area
+                </button>
+            </form>
         </article>
     </section>
     <footer></footer>
+    <script src="./js/math-min.js"></script>
 </body>
 </html>
